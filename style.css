@@ -1,0 +1,170 @@
+/* Основные стили */
+body {
+  margin: 0;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 15px;
+  color: #333333;
+  background: #ffffff;
+}
+
+.wrap {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: #0f766e;
+}
+
+h2 {
+  border-bottom: 2px solid #f59e0b;
+  padding-bottom: 4px;
+}
+
+a {
+  color: #0f766e;
+}
+
+/* Верхняя полоса */
+.top {
+  border-bottom: 4px solid #0f766e;
+  padding: 10px 0;
+}
+
+.top-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0f766e;
+}
+
+.site-name img {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 18px;
+}
+
+.menu a {
+  color: #333333;
+  text-decoration: none;
+}
+
+/* Блок на главной */
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0;
+  padding: 20px;
+  background: #f0fdfa;
+  border: 1px solid #99f6e4;
+}
+
+.intro-pic {
+  width: 260px;
+  max-width: 100%;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.lead {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Список возможностей */
+.features {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  border-left: 5px solid #f59e0b;
+  background: #fafafa;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+/* Внутренние страницы */
+.page {
+  padding: 10px 0 30px 0;
+}
+
+.page ol li {
+  margin-bottom: 6px;
+}
+
+.info td {
+  padding: 4px 20px 4px 0;
+}
+
+.info td:first-child {
+  font-weight: bold;
+}
+
+/* Форма */
+.feedback {
+  max-width: 450px;
+  padding: 15px 20px;
+  border: 1px solid #999999;
+}
+
+.feedback input[type="text"],
+.feedback input[type="email"],
+.feedback textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px;
+  border: 1px solid #999999;
+  font-family: inherit;
+}
+
+.feedback input[type="submit"] {
+  padding: 8px 25px;
+  background: #0f766e;
+  color: #ffffff;
+  border: none;
+  font-family: inherit;
+}
+
+/* Подвал */
+.bottom {
+  margin-top: 30px;
+  padding: 15px 0;
+  background: #eeeeee;
+  font-size: 13px;
+  color: #666666;
+}
+
+/* Телефоны */
+@media (max-width: 600px) {
+  .menu li {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  .intro {
+    justify-content: center;
+  }
+}

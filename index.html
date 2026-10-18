@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ResumeBot — Telegram-бот для резюме</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top">
+    <div class="wrap top-row">
+      <div class="site-name">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzIiIGZpbGw9IiMwZjc2NmUiLz4KICA8cmVjdCB4PSIxOSIgeT0iMTQiIHdpZHRoPSIyNiIgaGVpZ2h0PSIzNCIgZmlsbD0iI2ZmZmZmZiIvPgogIDxyZWN0IHg9IjI0IiB5PSIyMSIgd2lkdGg9IjE2IiBoZWlnaHQ9IjMiIGZpbGw9IiMwZjc2NmUiLz4KICA8cmVjdCB4PSIyNCIgeT0iMjgiIHdpZHRoPSIxNiIgaGVpZ2h0PSIzIiBmaWxsPSIjOTlmNmU0Ii8+CiAgPHJlY3QgeD0iMjQiIHk9IjM1IiB3aWR0aD0iMTEiIGhlaWdodD0iMyIgZmlsbD0iIzk5ZjZlNCIvPgogIDxjaXJjbGUgY3g9IjQ0IiBjeT0iNDQiIHI9IjkiIGZpbGw9IiNmNTllMGIiLz4KICA8cGF0aCBkPSJNNDAgNDRsMyAzIDUtNiIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=" alt="Логотип ResumeBot: лист резюме с галочкой" width="32" height="32">
+        <span>ResumeBot</span>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О проекте</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="intro">
+      <img class="intro-pic" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMzAwIj4KICA8IS0tINGC0LXQu9C10YTQvtC9IC0tPgogIDxyZWN0IHg9IjEwMCIgeT0iMTAiIHdpZHRoPSIxNjAiIGhlaWdodD0iMjgwIiByeD0iMjAiIGZpbGw9IiMxMzRlNGEiLz4KICA8cmVjdCB4PSIxMTAiIHk9IjMwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjI0MCIgZmlsbD0iI2U2ZjRmMSIvPgogIDxyZWN0IHg9IjE1NSIgeT0iMTgiIHdpZHRoPSI1MCIgaGVpZ2h0PSI1IiByeD0iMiIgZmlsbD0iIzBmNzY2ZSIvPgogIDwhLS0g0YHQvtC+0LHRidC10L3QuNC1INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjzog0YDQtdC30Y7QvNC1IC0tPgogIDxyZWN0IHg9IjE2MCIgeT0iNDIiIHdpZHRoPSI4MiIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIvPgogIDxyZWN0IHg9IjE2OCIgeT0iNTAiIHdpZHRoPSI1NiIgaGVpZ2h0PSI0IiBmaWxsPSIjOTRhM2I4Ii8+CiAgPHJlY3QgeD0iMTY4IiB5PSI1OSIgd2lkdGg9IjY2IiBoZWlnaHQ9IjQiIGZpbGw9IiM5NGEzYjgiLz4KICA8cmVjdCB4PSIxNjgiIHk9IjY4IiB3aWR0aD0iNDQiIGhlaWdodD0iNCIgZmlsbD0iIzk0YTNiOCIvPgogIDwhLS0g0YHQvtC+0LHRidC10L3QuNC1INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjzog0LLQsNC60LDQvdGB0LjRjyAtLT4KICA8cmVjdCB4PSIxNjAiIHk9IjkwIiB3aWR0aD0iODIiIGhlaWdodD0iMzIiIGZpbGw9IiNmZmZmZmYiLz4KICA8cmVjdCB4PSIxNjgiIHk9Ijk4IiB3aWR0aD0iNjAiIGhlaWdodD0iNCIgZmlsbD0iI2Y1OWUwYiIvPgogIDxyZWN0IHg9IjE2OCIgeT0iMTA3IiB3aWR0aD0iNDgiIGhlaWdodD0iNCIgZmlsbD0iIzk0YTNiOCIvPgogIDwhLS0g0L7RgtCy0LXRgiDQsdC+0YLQsCAtLT4KICA8cmVjdCB4PSIxMTgiIHk9IjEzMiIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI3MCIgZmlsbD0iIzBmNzY2ZSIvPgogIDx0ZXh0IHg9IjEyNiIgeT0iMTUyIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmZmZmZmIj5NYXRjaCBTY29yZTwvdGV4dD4KICA8dGV4dCB4PSIxMjYiIHk9IjE4MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZjZDM0ZCI+ODUlPC90ZXh0PgogIDxyZWN0IHg9IjEyNiIgeT0iMTg4IiB3aWR0aD0iNzAiIGhlaWdodD0iNCIgZmlsbD0iIzk5ZjZlNCIvPgogIDwhLS0g0YTQsNC50LsgLS0+CiAgPHJlY3QgeD0iMTE4IiB5PSIyMTIiIHdpZHRoPSI3MCIgaGVpZ2h0PSIyNiIgZmlsbD0iI2ZmZmZmZiIvPgogIDxyZWN0IHg9IjEyNCIgeT0iMjE4IiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIGZpbGw9IiMyNTYzZWIiLz4KICA8dGV4dCB4PSIxNDMiIHk9IjIyOSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmaWxsPSIjMTM0ZTRhIj5yZXN1bWUuZG9jeDwvdGV4dD4KICA8IS0tINC/0L7Qu9C1INCy0LLQvtC00LAgLS0+CiAgPHJlY3QgeD0iMTE2IiB5PSIyNDgiIHdpZHRoPSIxMjgiIGhlaWdodD0iMTYiIGZpbGw9IiNmZmZmZmYiLz4KICA8IS0tINC30L3QsNGH0LrQuCDQstC+0LrRgNGD0LMgLS0+CiAgPGNpcmNsZSBjeD0iNTAiIGN5PSI4MCIgcj0iMjYiIGZpbGw9IiNmNTllMGIiLz4KICA8cGF0aCBkPSJNMzggODBsOCA4IDE2LTE3IiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgPHJlY3QgeD0iMjg1IiB5PSIxNzAiIHdpZHRoPSI1MCIgaGVpZ2h0PSI2MiIgZmlsbD0iI2ZmZmZmZiIvPgogIDxyZWN0IHg9IjI5MyIgeT0iMTgwIiB3aWR0aD0iMzQiIGhlaWdodD0iNSIgZmlsbD0iIzBmNzY2ZSIvPgogIDxyZWN0IHg9IjI5MyIgeT0iMTkyIiB3aWR0aD0iMzQiIGhlaWdodD0iNCIgZmlsbD0iIzk0YTNiOCIvPgogIDxyZWN0IHg9IjI5MyIgeT0iMjAyIiB3aWR0aD0iMjYiIGhlaWdodD0iNCIgZmlsbD0iIzk0YTNiOCIvPgogIDxyZWN0IHg9IjI5MyIgeT0iMjEyIiB3aWR0aD0iMzAiIGhlaWdodD0iNCIgZmlsbD0iIzk0YTNiOCIvPgo8L3N2Zz4K" alt="Иллюстрация: чат с ботом в телефоне, бот показывает Match Score 85%">
+      <div class="intro-text">
+        <h1>ResumeBot</h1>
+        <p class="lead">Telegram-бот, который подстраивает резюме под вакансию.</p>
+        <p>Отправь боту своё резюме и текст вакансии. Он найдёт в вакансии главные требования,
+          перепишет резюме под них и покажет, насколько хорошо оно теперь подходит.</p>
+      </div>
+    </div>
+
+    <h2>Возможности</h2>
+    <ul class="features">
+      <li><b>Анализ вакансии.</b> Бот находит ключевые требования: навыки, технологии, опыт.</li>
+      <li><b>Адаптация резюме.</b> Формулировки меняются под вакансию, но новых фактов бот не придумывает.</li>
+      <li><b>Match Score.</b> Процент соответствия резюме вакансии и список того, что изменилось.</li>
+      <li><b>Экспорт.</b> Готовое резюме можно скачать в DOCX или Markdown.</li>
+    </ul>
+  </div>
+
+  <div class="bottom">
+    <div class="wrap">
+      ResumeBot, 2026. Учебный проект, ВГУ ФКН, группа 15
+    </div>
+  </div>
+</body>
+</html>
