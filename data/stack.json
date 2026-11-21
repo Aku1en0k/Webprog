@@ -1,0 +1,6 @@
+[
+  { "title": "Python", "description": "Язык, на котором написан бот" },
+  { "title": "Aiogram 3", "description": "Фреймворк для работы с Telegram Bot API" },
+  { "title": "PostgreSQL", "description": "База данных" },
+  { "title": "OpenAI API", "description": "Языковая модель: анализ вакансии и адаптация резюме" }
+]

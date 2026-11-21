@@ -17,6 +17,14 @@ h1, h2 {
   color: #0f766e;
 }
 
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
 h2 {
   border-bottom: 2px solid #f59e0b;
   padding-bottom: 4px;
@@ -24,6 +32,10 @@ h2 {
 
 a {
   color: #0f766e;
+}
+
+a:hover {
+  color: #115e59;
 }
 
 /* Верхняя полоса */
@@ -148,6 +160,94 @@ a {
   font-family: inherit;
 }
 
+/* Кнопки (цвета сайта поверх Bootstrap) */
+.btn-brand {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #0f766e;
+  --bs-btn-border-color: #0f766e;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #115e59;
+  --bs-btn-hover-border-color: #115e59;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #134e4a;
+  --bs-btn-active-border-color: #134e4a;
+  --bs-btn-focus-shadow-rgb: 15, 118, 110;
+  border-radius: 0;
+}
+
+.btn-outline-brand {
+  --bs-btn-color: #0f766e;
+  --bs-btn-border-color: #0f766e;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #0f766e;
+  --bs-btn-hover-border-color: #0f766e;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #115e59;
+  --bs-btn-active-border-color: #115e59;
+  --bs-btn-focus-shadow-rgb: 15, 118, 110;
+  border-radius: 0;
+}
+
+.intro-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.more-text {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-left: 5px solid #f59e0b;
+  background: #ffffff;
+}
+
+/* Меню: активная страница и кнопка темы */
+.menu a.active {
+  color: #0f766e;
+  font-weight: bold;
+  border-bottom: 2px solid #f59e0b;
+}
+
+.theme-btn {
+  padding: 3px 10px;
+  border: 1px solid #999999;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.theme-btn:hover {
+  border-color: #0f766e;
+}
+
+/* Технологии (из JSON) */
+.stack-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.stack-list li {
+  border-left: 5px solid #f59e0b;
+  background: #fafafa;
+  padding: 10px 15px;
+}
+
+/* Сообщения формы */
+.form-message {
+  margin: 12px 0 0 0;
+  font-weight: bold;
+}
+
+.feedback .invalid {
+  border-color: #dc3545;
+  background: #fff5f5;
+}
+
 /* Подвал */
 .bottom {
   margin-top: 30px;
@@ -155,6 +255,85 @@ a {
   background: #eeeeee;
   font-size: 13px;
   color: #666666;
+}
+
+/* Тёмная тема */
+.dark-theme {
+  background: #14181a;
+  color: #e4e7e7;
+}
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme a,
+.dark-theme .site-name,
+.dark-theme .menu a.active {
+  color: #5eead4;
+}
+
+.dark-theme a:hover {
+  color: #99f6e4;
+}
+
+.dark-theme .menu a {
+  color: #e4e7e7;
+}
+
+.dark-theme .menu a.active {
+  color: #5eead4;
+}
+
+.dark-theme .top {
+  border-bottom-color: #14b8a6;
+}
+
+.dark-theme .intro {
+  background: #0f2a28;
+  border-color: #115e59;
+}
+
+.dark-theme .features li,
+.dark-theme .stack-list li {
+  background: #1d2326;
+}
+
+.dark-theme .more-text {
+  background: #14181a;
+}
+
+.dark-theme .bottom {
+  background: #1d2326;
+  color: #9aa5a5;
+}
+
+.dark-theme .feedback,
+.dark-theme .theme-btn {
+  border-color: #5b6b6b;
+}
+
+.dark-theme .feedback input[type="text"],
+.dark-theme .feedback input[type="email"],
+.dark-theme .feedback textarea {
+  background: #1d2326;
+  color: #e4e7e7;
+  border-color: #5b6b6b;
+}
+
+.dark-theme .feedback .invalid {
+  border-color: #f87171;
+  background: #2a1a1a;
+}
+
+.dark-theme .feedback input[type="submit"] {
+  background: #14b8a6;
+  color: #042f2e;
+}
+
+.dark-theme .btn-outline-brand {
+  --bs-btn-color: #5eead4;
+  --bs-btn-border-color: #5eead4;
+  --bs-btn-hover-color: #042f2e;
+  --bs-btn-hover-bg: #5eead4;
 }
 
 /* Телефоны */
